@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Britney Wright","Jam Black"]
   s.email       = ["blw06g@gmail.com","jamela.black@gmail.com"]
   s.homepage    = "http://github.com/browserspree/bcms_spree"
-  s.summary     = "Spree e-commerce integration module for BrowserCMS."
-  s.description = "Spree e-commerce integration module for BrowserCMS."
+  s.summary     = "Spree e-commerce integration module for BrowserCMS. 2014 Rails Girls Summer of Code Project."
+  s.description = "Spree e-commerce integration module for BrowserCMS. 2014 Rails Girls Summer of Code Project."
   s.license     = %q{MIT-LICENSE}
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
