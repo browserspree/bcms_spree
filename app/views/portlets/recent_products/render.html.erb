@@ -1,0 +1,6 @@
+<%=h @portlet.name %>
+<ul>
+  <% @products.each do |product| %>
+    <li><%= link_to product.name, spree.product_path(product) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,20 @@
+<nav data-hook="admin_login_navigation_bar" class="columns eleven">
+
+  <ul id="login-nav" class="inline-menu">
+    
+    <li id="tour-link">
+  </li><li data-hook="user-logged-in-as">
+Logged in as: <%= spree_current_user.email %>
+</li>
+    <li data-hook="user-account-link" class="fa fa-user">
+      <%= link_to "Account", spree.admin_user_path(spree_current_user) %>
+    </li>
+    <li data-hook="user-logout-link" class="fa fa-sign-out">
+      <%= link_to "Logout", spree_logout_path %>
+    </li>
+      <li data-hook="store-frontend-link" class="fa fa-external-link">
+         <%= link_to "Go Back To Store", spree.root_path %>
+      </li>
+  </ul>
+
+</nav>

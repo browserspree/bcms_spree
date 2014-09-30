@@ -1,0 +1,3 @@
+== BcmsSpree
+
+BrowserCMS/Spree integration module.

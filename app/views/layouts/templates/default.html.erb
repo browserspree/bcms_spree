@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title><%= page_title %></title>
+    <%= yield :html_head %>
+
+<script src="/assets/spree.js?body=1"></script>
+<script src="/assets/spree/frontend/cart.js?body=1"></script>
+<script>
+  if (Spree === undefined) {
+    var Spree = {};
+  }
+  if (Spree.routes == undefined) {
+    Spree.routes = {};
+  }
+  Spree.routes.states_search = "/shop/api/states";
+  Spree.routes.apply_coupon_code = function(order_id) {
+    return "/shop/api/orders/" + order_id + "/apply_coupon_code";
+  }
+  Spree.routes.root = "http://localhost:3000/shop/";
+</script>
+
+<script>
+Spree.routes.cart_link = "http://localhost:3000/shop/cart_link"
+</script>
+
+  </head>
+  <body style="margin: 0; padding: 0; text-align: center;">
+    <div id="wrapper" style="width: 700px; margin: 0 auto; text-align: left; padding: 30px">
+      Breadcrumbs: <%= render_breadcrumbs %>
+      Main Menu: <%= render_menu %>
+      <div id="link-to-cart" data-hook>
+      <noscript>
+        <%= link_to Spree.t(:cart), spree.cart_path %>
+      </noscript>
+      &nbsp;
+    </div>
+    <script>Spree.fetch_cart()</script>
+      <h1><%= page_header %></h1>
+      <%= container :main %>
+    </div>
+  </body>
+</html>
