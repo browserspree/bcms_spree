@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem 'rails', '4.0.6'
 
-gem 'browsercms', :git => 'https://github.com/britneywright/browsercms.git', :branch => 'master'
+gem 'browsercms', ">= 4.0.0.rc1", '< 5.0'
 
 gem 'actionpack', '~> 4.0.6'
 
