@@ -1,6 +1,6 @@
 # bcms_spree: The Spree integration module for BrowserCMS
 
-A module to integrate the [Spree](https://github.co/spree/spree) e-commerce engine with [BrowserCMS](https://github.com/browsermedia/browserspree).
+A module to integrate the [Spree](https://github.co/spree/spree) e-commerce engine with [BrowserCMS](https://github.com/browsermedia/browsercms).
 
 ## Demo
 
